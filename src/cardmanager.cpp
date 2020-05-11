@@ -57,3 +57,29 @@ void CardManager::print_deck_count()
 {
 	std::cout << "Deck count: " << this->m_deck->size() << std::endl;
 }
+
+int CardManager::get_deck_count()
+{
+	return this->m_deck->size();
+}
+
+std::vector<std::shared_ptr<Card>> CardManager::deal_hand()
+{
+	// Random hand vector
+	std::shared_ptr<std::vector<std::shared_ptr<Card>>> _hand = std::make_shared<std::vector<std::shared_ptr<Card>>>();
+	//std::vector<std::shared_ptr<Card>> *_hand = new std::vector<std::shared_ptr<Card>>;
+	// Time seed
+	srand(time(0));
+	int _randomIndex = 0;
+	// Deal hand
+	const int _numOfCardsInHand = 5;
+	for (int i = 0; i < _numOfCardsInHand; i++)
+	{
+		_randomIndex = rand() % (this->get_deck_count() + 1);
+		std::shared_ptr<Card> _cardToDeal = this->m_deck->at(_randomIndex);
+		_hand->push_back(_cardToDeal);
+	}
+	
+	// Return the new hand
+	return *_hand;
+}

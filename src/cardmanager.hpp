@@ -4,6 +4,9 @@
 #include <iostream>
 #include <vector>
 #include <memory>
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 #include "card.hpp"
 
 class CardManager
@@ -13,6 +16,8 @@ public:
 	~CardManager();
 	void list_cards_in_deck();
 	void print_deck_count();
+	int get_deck_count();
+	std::vector<std::shared_ptr<Card>> deal_hand();
 private:
 	std::vector<std::shared_ptr<Card>>* m_deck;
 
