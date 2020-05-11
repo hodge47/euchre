@@ -1,5 +1,0 @@
-/mnt/c/Development/School/Cpp2/Euchre/build/CMakeFiles/euchre.dir
-/mnt/c/Development/School/Cpp2/Euchre/build/CMakeFiles/edit_cache.dir
-/mnt/c/Development/School/Cpp2/Euchre/build/CMakeFiles/euchre-test.dir
-/mnt/c/Development/School/Cpp2/Euchre/build/CMakeFiles/gtest.dir
-/mnt/c/Development/School/Cpp2/Euchre/build/CMakeFiles/rebuild_cache.dir

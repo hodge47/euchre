@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/euchre-test.dir/tests/main.cpp.o  -o euchre-test -rdynamic libgtest.a -lpthread 
