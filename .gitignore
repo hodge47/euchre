@@ -33,3 +33,6 @@
 
 # Directories
 [Bb]uild/
+
+# Visual studio generated files
+.vs/
