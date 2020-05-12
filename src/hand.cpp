@@ -17,6 +17,11 @@ void Hand::set_hand_name(std::string _handName)
 	this->m_hand_name = _handName;
 }
 
+std::string Hand::get_hand_name()
+{
+	return this->m_hand_name;
+}
+
 void Hand::print_hand()
 {
 	const int _handSize = this->m_hand->size();
