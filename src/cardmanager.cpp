@@ -78,7 +78,7 @@ std::vector<std::shared_ptr<Card>> CardManager::deal_hand()
 	for (int i = 0; i < _numOfCardsInHand; i++)
 	{
 		_randomIndex = rand() % (this->get_deck_count());
-		std::cout << "Random index: " << _randomIndex << std::endl;
+		//std::cout << "Random index: " << _randomIndex << std::endl;
 		std::shared_ptr<Card> _cardToDeal = this->m_deck->at(_randomIndex);
 		_hand->push_back(_cardToDeal);
 		// Remove card from deck
