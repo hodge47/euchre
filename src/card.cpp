@@ -26,3 +26,8 @@ std::string Card::get_color()
 {
 	return m_color;
 }
+
+void Card::print_all()
+{
+	std::cout << this->get_rank() << ":" << this->get_suit() << ":" << this->get_color() << std::endl;
+}

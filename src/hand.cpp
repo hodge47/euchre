@@ -56,3 +56,13 @@ void Hand::deal_hand(std::vector<std::shared_ptr<Card>> _newHand)
 		this->m_hand->push_back(_newHand[i]);
 	}
 }
+
+void Hand::set_hand(std::vector<std::shared_ptr<Card>> hand)
+{
+	*m_hand = hand;
+}
+
+std::vector<std::shared_ptr<Card>> Hand::get_hand()
+{
+	return *m_hand;
+}
